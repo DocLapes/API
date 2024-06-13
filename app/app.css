@@ -1,0 +1,11 @@
+﻿@import '@nativescript/theme/css/core.css';
+@import '@nativescript/theme/css/default.css';
+
+ActionBar
+{
+    height: 0;
+}
+
+.fas {
+    font-family: Font Awesome 6 Free, fa-solid-900;
+}

@@ -1,0 +1,14 @@
+Page
+{
+    background-color: hsl(0, 0%, 93%);
+}
+
+.currency
+{
+    font-size: 23;
+}
+
+.currency:highlighted
+{
+    background-color: hsl(0, 0%, 10%);
+}

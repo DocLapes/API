@@ -1,0 +1,39 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
+    <StackLayout>
+        <FlexboxLayout class="convertionParticipants">
+            <FlexboxLayout class="baseCurrency" tap="{{ changeBaseCurrency }}">
+                <Label class="currencyCode" text="{{ baseCurrencyCode }}" />
+                <Label class="currencyAmount" text="{{ baseCurrencyAmount }}" />
+            </FlexboxLayout>
+            <FlexboxLayout class="targetCurrency" tap="{{ changeTargetCurrency }}">
+                <Label class="currencyCode" text="{{ targetCurrencyCode }}" />
+                <Label class="currencyAmount" text="{{ targetCurrencyAmount }}" />
+            </FlexboxLayout>
+        </FlexboxLayout>
+
+        <Button class="swapCurrencys" text="Поменять местами" tap="{{ swapConvertionParticipants }}"/>
+
+        <GridLayout class="numpad" columns="*, *, *, *" rows="*, *, *, *">
+            <Button text="7" col="0" row="0" tap="{{ addSymbolToUserInput }}"/>
+            <Button text="8" col="1" row="0" tap="{{ addSymbolToUserInput }}"/>
+            <Button text="9" col="2" row="0" tap="{{ addSymbolToUserInput }}"/>
+            <Button text="4" col="0" row="1" tap="{{ addSymbolToUserInput }}"/>
+            <Button text="5" col="1" row="1" tap="{{ addSymbolToUserInput }}"/>
+            <Button text="6" col="2" row="1" tap="{{ addSymbolToUserInput }}"/>
+            <Button text="1" col="0" row="2" tap="{{ addSymbolToUserInput }}"/>
+            <Button text="2" col="1" row="2" tap="{{ addSymbolToUserInput }}"/>
+            <Button text="3" col="2" row="2" tap="{{ addSymbolToUserInput }}"/>
+            <Button text="0" col="0" colSpan="2" row="3" tap="{{ addSymbolToUserInput }}"/>
+            <Button text="," col="2" row="3" tap="{{ addSymbolToUserInput }}"/>
+            <Button class='operation fas' text="&#xf55a;" col="3" row="0" rowSpan="2" height="auto" tap="{{ deleteLastInputOfUser }}"/>
+            <Button class='operation' text="AC" col="3" row="2" rowSpan="2" height="auto" tap="{{ clearUserInput }}"/>
+        </GridLayout>
+        <FlexboxLayout class="footer">
+            <Button text="&#xf021;" class="updateCurrencyRates fas" tap="{{ updateCurrencyExchangeRates }}" />
+            <FlexboxLayout class="currencyConvertionInfo">
+                <Label text="{{ dateOfLastMultipliersUpdate }}" class="currencyRateRelevanceDate" />
+                <Label text="{{ currencyConvertionRate }}" class="currencyConvertionRate" />
+            </FlexboxLayout>
+        </FlexboxLayout>
+    </StackLayout>
+</Page>

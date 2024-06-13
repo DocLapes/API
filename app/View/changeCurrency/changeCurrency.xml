@@ -1,0 +1,12 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
+    <ActionBar title="Валюты">
+        <NavigationButton android.systemIcon="ic_menu_back" tap="{{ goHome }}"/>
+    </ActionBar>
+    <FlexboxLayout>
+    <ListView items="{{ currencys }}" itemTap="{{ chooseCurrency }}">
+    <ListView.itemTemplate>
+        <Label text="{{ currencyName }}" class="currency" id="{{ currencyCode }}"/>
+    </ListView.itemTemplate>
+    </ListView>
+    </FlexboxLayout>
+</Page>

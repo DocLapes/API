@@ -1,0 +1,139 @@
+Page
+{
+    background-color: hsl(242, 0%, 95%);
+}
+
+.convertionParticipants
+{
+    height: 40%;
+    padding: 0 6;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+}
+
+.baseCurrency,
+.targetCurrency
+{
+    flex-flow: column nowrap;
+    justify-content: center;
+    height: 48%;
+    padding: 0 12;
+    border-radius: 15% 15% 15% 15%;
+}
+
+.baseCurrency
+{
+    background-color: hsl(242, 100%, 97%);
+}
+
+.targetCurrency
+{
+    background-color: white;
+}
+
+.currencyCode
+{
+    color: hsl(277, 100%, 30%);
+    font-size: 25;
+    text-transform: uppercase;
+}
+
+.currencyAmount
+{
+    align-self: flex-end;
+    font-size: 25;
+    text-wrap: true;
+}
+
+.swapCurrencys
+{
+    border-radius: 8% 8% 8% 8%;
+    font-size: 23;
+    height: 6%;
+    border-color: black;
+    border-width: 1;
+    border-height: 1;
+    background-color: white;
+}
+
+.swapCurrencys:highlighted
+{
+    background-color: hsl(0, 0%, 83%);
+}
+
+.numpad
+{
+    height: 45%;
+    padding: 0 5;
+    background-color: white;
+}
+
+.numpad > Button
+{
+    background-color: hsl(0, 0%, 90%);
+    border-radius: 20%;
+    font-size: 30;
+    width: 23%;
+    height: auto;
+}
+
+.numpad > Button:highlighted
+{
+    background-color: hsl(0, 0%, 80%);
+}
+
+.numpad > Button[text='0']
+{
+    width: 48%;
+}
+
+.numpad .operation
+{
+    background-color: hsl(0, 100%, 85%);
+}
+
+.numpad .operation:highlighted
+{
+    background-color: hsl(0, 100%, 75%);
+}
+
+.footer
+{
+    height: 9%;
+    flex-flow: row nowrap;
+}
+
+.footer > Button
+{
+    font-size: 20;
+    color: black;
+    background-color: hsl(242, 0%, 95%);
+    border-width: 1;
+    z-index: 0;
+    width: 10;
+    height: 10;
+}
+
+.footer > Button:highlighted
+{
+    color: grey;
+}
+
+.currencyConvertionInfo
+{
+    align-self: center;
+    justify-content: space-between;
+    flex-flow: column nowrap;
+    align-items: center;
+    font-size: 15;
+}
+
+.currencyRateRelevanceDate
+{
+    color: #009700;
+}
+
+.currencyConvertionRate
+{
+    color: #4b4b4b;
+}
